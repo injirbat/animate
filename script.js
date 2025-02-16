@@ -3,9 +3,9 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"j_atlas_1", frames: [[0,0,895,800],[0,802,895,792],[897,0,895,800],[897,802,895,792]]},
-		{name:"j_atlas_2", frames: [[0,778,866,793],[0,0,895,776],[868,778,866,793],[897,0,895,776]]},
-		{name:"j_atlas_3", frames: [[777,783,673,781],[0,0,775,788],[777,0,674,781],[0,790,775,788]]}
+		{name:"script_atlas_1", frames: [[0,0,895,800],[0,802,895,792],[897,0,895,800],[897,802,895,792]]},
+		{name:"script_atlas_2", frames: [[0,778,866,793],[0,0,895,776],[868,778,866,793],[897,0,895,776]]},
+		{name:"script_atlas_3", frames: [[777,783,673,781],[0,0,775,788],[777,0,674,781],[0,790,775,788]]}
 ];
 
 
@@ -30,84 +30,84 @@ lib.ssMetadata = [
 
 
 (lib.CachedBmp_16 = function() {
-	this.initialize(ss["j_atlas_3"]);
+	this.initialize(ss["script_atlas_3"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_15 = function() {
-	this.initialize(ss["j_atlas_3"]);
+	this.initialize(ss["script_atlas_3"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_14 = function() {
-	this.initialize(ss["j_atlas_2"]);
+	this.initialize(ss["script_atlas_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_13 = function() {
-	this.initialize(ss["j_atlas_1"]);
+	this.initialize(ss["script_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_12 = function() {
-	this.initialize(ss["j_atlas_1"]);
+	this.initialize(ss["script_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_11 = function() {
-	this.initialize(ss["j_atlas_2"]);
+	this.initialize(ss["script_atlas_2"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_10 = function() {
-	this.initialize(ss["j_atlas_3"]);
+	this.initialize(ss["script_atlas_3"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_9 = function() {
-	this.initialize(ss["j_atlas_3"]);
+	this.initialize(ss["script_atlas_3"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_8 = function() {
-	this.initialize(ss["j_atlas_2"]);
+	this.initialize(ss["script_atlas_2"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_7 = function() {
-	this.initialize(ss["j_atlas_1"]);
+	this.initialize(ss["script_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_6 = function() {
-	this.initialize(ss["j_atlas_1"]);
+	this.initialize(ss["script_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.CachedBmp_5 = function() {
-	this.initialize(ss["j_atlas_2"]);
+	this.initialize(ss["script_atlas_2"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
@@ -304,7 +304,7 @@ if (reversed == null) { reversed = false; }
 	// Layer_3
 	this.hit = new lib.Symbol1();
 	this.hit.name = "hit";
-	this.hit.setTransform(572.55,313.95,1,1,0,0,0,571.5,336.9);
+	this.hit.setTransform(595.55,330.95,1,1,0,0,0,571.5,336.9);
 	this.hit._off = true;
 	new cjs.ButtonHelper(this.hit, 0, 1, 1);
 
@@ -316,10 +316,17 @@ if (reversed == null) { reversed = false; }
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:-132,y:283.9,startPosition:11},59).wait(1));
 
+	// Layer_5
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#00FFFF").s().p("EhM8AzpMAAAhnRMCZ5AAAMAAABnRg");
+	this.shape.setTransform(646.425,326.525);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(60));
+
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(210.4,297.1,1377.3999999999999,353.9);
+p.nominalBounds = new cjs.Rectangle(210.4,314.1,1377.3999999999999,353.9);
 // library properties:
 lib.properties = {
 	id: '7C529E027E44BF4F983C767C3FEB469B',
@@ -329,9 +336,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/j_atlas_1.png", id:"j_atlas_1"},
-		{src:"images/j_atlas_2.png", id:"j_atlas_2"},
-		{src:"images/j_atlas_3.png", id:"j_atlas_3"}
+		{src:"images/script_atlas_1.png", id:"script_atlas_1"},
+		{src:"images/script_atlas_2.png", id:"script_atlas_2"},
+		{src:"images/script_atlas_3.png", id:"script_atlas_3"}
 	],
 	preloads: []
 };
